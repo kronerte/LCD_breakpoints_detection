@@ -18,3 +18,24 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+Documentation for the Code
+**************************
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+Utility Functions
+===================
+.. automodule:: utils
+   :members:
+
+Front End API
+=====================
+.. automodule:: LCDBP
+   :members:
+
+Main Algorithms
+===================
+.. automodule:: CoordinateDescent
+   :members:

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to LCDBP’s documentation! &#8212; Documentation LCDBP 0.1</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-lcdbp-s-documentation">
+<h1>Welcome to LCDBP’s documentation!<a class="headerlink" href="#welcome-to-lcdbp-s-documentation" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Lien permanent vers ce titre">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Index du module</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Page de recherche</span></a></p></li>
+</ul>
+<div class="section" id="documentation-for-the-code">
+<h2>Documentation for the Code<a class="headerlink" href="#documentation-for-the-code" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+<div class="section" id="module-utils">
+<span id="utility-functions"></span><h1>Utility Functions<a class="headerlink" href="#module-utils" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="function">
+<dt id="utils.append_sort">
+<code class="sig-prename descclassname">utils.</code><code class="sig-name descname">append_sort</code><span class="sig-paren">(</span><em class="sig-param">L</em>, <em class="sig-param">a</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.append_sort" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Add an element in a sorted List and keep the constrain of sorted and no duplicate.</p>
+<p>Use Insertion sort.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>L : the sorted List</p></li>
+<li><p>a : the element we want to place in the list</p></li>
+<li><p>n : the size of the list</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>L : the sorted list with the new element append</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.prodXTXv">
+<code class="sig-prename descclassname">utils.</code><code class="sig-name descname">prodXTXv</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.prodXTXv" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fast computation function for the product between a vector v, the matrix X and the transpose of the matrix X, 
+where X is the triangular matrix with only one below the diagonal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>v : (array-like) the vector v</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>res : the result of the matrix-vector product</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.prodXTv">
+<code class="sig-prename descclassname">utils.</code><code class="sig-name descname">prodXTv</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.prodXTv" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fast computation function for the product between a vector v  
+and the transpose of the triangular matrix X with only one below the diagonal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>v : (array-like) the vector v</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>res : the result of the matrix-vector product</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.prodXiTXv">
+<code class="sig-prename descclassname">utils.</code><code class="sig-name descname">prodXiTXv</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.prodXiTXv" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Fast computation function for the product between a vector v, the matrix X and the transpose of the i-th row of the matrix X, 
+where X is the triangular matrix with only one below the diagonal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>v : (array-like) the vector v</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>res : the result of the matrix-vector product</p></li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="front-end-api">
+<h1>Front End API<a class="headerlink" href="#front-end-api" title="Lien permanent vers ce titre">¶</a></h1>
+</div>
+<div class="section" id="module-CoordinateDescent">
+<span id="main-algorithms"></span><h1>Main Algorithms<a class="headerlink" href="#module-CoordinateDescent" title="Lien permanent vers ce titre">¶</a></h1>
+<dl class="function">
+<dt id="CoordinateDescent.CoordinateDescent">
+<code class="sig-prename descclassname">CoordinateDescent.</code><code class="sig-name descname">CoordinateDescent</code><span class="sig-paren">(</span><em class="sig-param">beta</em>, <em class="sig-param">Lambda</em>, <em class="sig-param">A</em>, <em class="sig-param">c=None</em>, <em class="sig-param">Y=None</em>, <em class="sig-param">n=None</em>, <em class="sig-param">eps_thres=0.001</em><span class="sig-paren">)</span><a class="headerlink" href="#CoordinateDescent.CoordinateDescent" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Use the Coordinate Descent Algorithm in order to optimize the LASSO on the active set A.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>beta : the current weights vector we want to optimize</p></li>
+<li><p>Lambda : regularisation parameter of the Lasso</p></li>
+<li><p>A : Active set (list of coordinate that are not equal to zero)</p></li>
+<li><p>c : vector of correlation (if not provided, it would be automatically computed)</p></li>
+<li><p>Y : vector of observation (needed only to compute c, if c is not provided)</p></li>
+<li><p>n : number of observations (if not provided, it would be calculated)</p></li>
+<li><p>eps-thres : Hyperparameter that control the convergence of the algorithm</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>beta : beta vector after optimization on the active set</p></li>
+<li></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="CoordinateDescent.LASSO_CD">
+<code class="sig-prename descclassname">CoordinateDescent.</code><code class="sig-name descname">LASSO_CD</code><span class="sig-paren">(</span><em class="sig-param">Y</em>, <em class="sig-param">Lambda</em>, <em class="sig-param">eps_thres=0.001</em><span class="sig-paren">)</span><a class="headerlink" href="#CoordinateDescent.LASSO_CD" title="Lien permanent vers cette définition">¶</a></dt>
+<dd><p>Resolve the LASSO problem for the specific matrix X : triangalar with only one below the diagonal.
+The Lasso is solved by alternating coordinate descent and active set update.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<ul class="simple">
+<li><p>Y : vector of observations</p></li>
+<li><p>Lambda : regularisation parameter of the Lasso</p></li>
+<li><p>eps-thres : Hyperparameter that control the convergence of the algorithm</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Renvoie</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>beta : solution of the LASSO</p></li>
+</ul>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">LCDBP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Etienne Kronert.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
