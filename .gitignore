@@ -2,4 +2,6 @@
 docs/_build/*
 docs/_templates/*
 docs/_static/*
-docs/_build
+/docs/_build/*
+/LCD/*
+/LCD/pyvenv.cfg
