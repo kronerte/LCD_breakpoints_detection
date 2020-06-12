@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="LCD-breakpoints-detection", # Replace with your own username
-    packages=['src'],
-    package_dir={'lcdbd':'src'},
+    packages=['lcdbp'],
+    package_dir={'lcdbp':'lcdbp/src'},
     install_requires=['numpy'],
-    version="0.1.1",
+    version="0.1.4",
     author="Etienne Kronert",
     author_email="etienne.kronert@lilo.org",
     description="Breakpoint Detection with LASSO and Coordinate Descent",
